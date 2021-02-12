@@ -7,6 +7,7 @@
 module.exports = {
   siteName: 'Serpentiel\'s Blog',
   siteDescription: 'Do what you love. Love what you do.',
+  siteUrl: 'https://www.serpentiel.me',
 
   templates: {
     Post: '/:title',
@@ -28,6 +29,15 @@ module.exports = {
           }
         }
       }
+    },
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-140377362-1'
+      }
+    },
+    {
+      use: '@gridsome/plugin-sitemap'
     }
   ],
 
