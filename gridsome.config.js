@@ -5,13 +5,13 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Serpentiel\'s Blog',
+  siteName: `Serpentiel's Blog`,
   siteDescription: 'Do what you love. Love what you do.',
   siteUrl: 'https://www.serpentiel.me',
 
   templates: {
-    Post: '/:title',
-    Tag: '/tag/:id'
+    Post: '/posts/:title',
+    Tag: '/tags/:id'
   },
 
   plugins: [
