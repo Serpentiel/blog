@@ -10,8 +10,8 @@ module.exports = {
   siteUrl: 'https://www.serpentiel.me',
 
   templates: {
-    Post: '/posts/:title',
-    Tag: '/tags/:id'
+    Post: '/:year/:month/:path',
+    Tag: '/:id'
   },
 
   plugins: [

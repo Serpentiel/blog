@@ -1,20 +1,18 @@
 <template>
-	<div class="author">
+  <div class="author">
+    <h1 v-if="showTitle" class="author__site-title">
+      {{ $static.metadata.siteName }}
+    </h1>
 
-		<h1 v-if="showTitle" class="author__site-title">
-			{{ $static.metadata.siteName }}
-		</h1>
-
-		<p class="author__intro">
+    <p class="author__intro">
       {{ $static.metadata.siteDescription }}
-		</p>
+    </p>
 
-		<p class="author__links">
+    <p class="author__links">
       <a href="//github.com/Serpentiel">GitHub</a>
       <a href="//twitter.com/zaruczewski">Twitter</a>
-		</p>
-
-	</div>
+    </p>
+  </div>
 </template>
 
 <static-query>
@@ -28,30 +26,31 @@ query {
 
 <script>
 export default {
-	props: ['showTitle']
+  props: ['showTitle'],
 }
 </script>
 
 <style lang="scss">
 .author {
-	margin: 0 auto;
-	max-width: 500px;
-	text-align: center;
-	padding: calc(var(--space) / 2) 0;
+  margin: 0 auto;
+  max-width: 500px;
+  text-align: center;
+  padding: calc(var(--space) / 2) 0;
 
-	&__intro {
-		opacity: .8;
-	}
+  &__intro {
+    opacity: .8;
+  }
 
-	&__site-title {
-		font-size: 1.5em;
-	}
+  &__site-title {
+    font-size: 1.5em;
+  }
 
-	&__links {
-		margin-top: -.5em;
-		a {
-			margin: 0 .5em;
-		}
-	}
+  &__links {
+    margin-top: -.5em;
+
+    a {
+      margin: 0 .5em;
+    }
+  }
 }
 </style>

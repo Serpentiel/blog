@@ -1,56 +1,78 @@
 <template>
-  <Layout>
+  <Layout @themeChanged="(v) => { this.darkTheme = v }">
     <div class="post-title">
       <h1 class="post-title__text">
         {{ $page.post.title }}
       </h1>
 
-      <PostMeta :post="$page.post" />
+      <PostMeta :post="$page.post"/>
 
     </div>
 
     <div class="post content-box">
       <div class="post__header">
-        <g-image alt="Cover image" v-if="$page.post.cover_image" :src="$page.post.cover_image" />
+        <g-image v-if="$page.post.cover_image" :src="$page.post.cover_image"/>
       </div>
 
-      <div class="post__content" v-html="$page.post.content" />
+      <div class="post__content" v-html="$page.post.content"/>
 
       <div class="post__footer">
-        <PostTags :post="$page.post" />
+        <PostTags :post="$page.post"/>
       </div>
     </div>
 
     <div class="post-comments">
-      <!-- Add comment widgets here -->
+      <div v-show="darkTheme">
+        <script type="application/javascript"
+                src="https://utteranc.es/client.js"
+                repo="Serpentiel/blog"
+                issue-term="pathname"
+                label="comment thread"
+                theme="photon-dark"
+                crossorigin="anonymous"
+                async>
+        </script>
+      </div>
+      <div v-show="!darkTheme">
+        <script type="application/javascript"
+                src="https://utteranc.es/client.js"
+                repo="Serpentiel/blog"
+                issue-term="pathname"
+                label="comment thread"
+                theme="github-light"
+                crossorigin="anonymous"
+                async>
+        </script>
+      </div>
     </div>
-
-    <Author class="post-author" />
   </Layout>
 </template>
 
 <script>
 import PostMeta from '~/components/PostMeta'
 import PostTags from '~/components/PostTags'
-import Author from '~/components/Author.vue'
 
 export default {
   components: {
-    Author,
     PostMeta,
-    PostTags
+    PostTags,
   },
-  metaInfo () {
+  metaInfo() {
     return {
       title: this.$page.post.title,
       meta: [
         {
           name: 'description',
           content: this.$page.post.description
-        }
-      ]
+        },
+      ],
     }
-  }
+  },
+  data() {
+    return {
+      darkTheme: false,
+    }
+  },
 }
 </script>
 
@@ -68,7 +90,7 @@ query Post ($id: ID!) {
     }
     description
     content
-    cover_image (width: 860, blur: 10)
+    # cover_image (width: 860, blur: 10)
   }
 }
 </page-query>
@@ -80,7 +102,6 @@ query Post ($id: ID!) {
 }
 
 .post {
-
   &__header {
     width: calc(100% + var(--space) * 2);
     margin-left: calc(var(--space) * -1);

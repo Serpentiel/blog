@@ -39,17 +39,12 @@ import PostCard from '~/components/PostCard.vue'
 export default {
   components: {
     Author,
-    PostCard
+    PostCard,
   },
-  metaInfo () {
+  metaInfo() {
     return {
-      title: this.$page.tag.title
+      title: this.$page.tag.title,
     }
-  }
+  },
 }
 </script>
-
-<style lang="scss">
-
-</style>
-

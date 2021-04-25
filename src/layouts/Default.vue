@@ -3,11 +3,11 @@
 
     <header class="header">
       <div class="header__left">
-        <Logo v-if="showLogo" /> 
+        <Logo v-if="showLogo"/>
       </div>
-      
-      <div class="header__right">        
-        <ToggleTheme />
+
+      <div class="header__right">
+        <ToggleTheme @themeChanged="(v) => { this.$emit('themeChanged', v) }"/>
       </div>
     </header>
 
@@ -16,10 +16,9 @@
     </main>
 
     <footer class="footer">
-      <span class="footer__copyright">Copyright &copy; {{ new Date().getFullYear() }}. </span>
-      <span class="footer__links">Powered by <a href="//gridsome.org"> Gridsome </a></span>
+      <span class="footer__copyright">Made with &hearts; by Serpentiel</span>
+      <span class="footer__links">Powered by <a href="//gridsome.org">Gridsome</a></span>
     </footer>
-
   </div>
 </template>
 
@@ -37,20 +36,20 @@ import ToggleTheme from '~/components/ToggleTheme.vue'
 
 export default {
   props: {
-    showLogo: { default: true }
+    showLogo: {default: true}
   },
   components: {
     Logo,
-    ToggleTheme
+    ToggleTheme,
   },
-  metaInfo () {
+  metaInfo() {
     return {
       titleTemplate: (titleChunk) => {
-        let siteName = this.$static.metadata.siteName;
-        return titleChunk ? `${titleChunk} - ${siteName}` : siteName;
-      }
+        let siteName = this.$static.metadata.siteName
+        return titleChunk ? `${titleChunk} - ${siteName}` : siteName
+      },
     }
-  }
+  },
 }
 </script>
 
@@ -61,7 +60,7 @@ export default {
   align-items: center;
   min-height: var(--header-height);
   padding: 0 calc(var(--space) / 2);
-  top:0;
+  top: 0;
   z-index: 10;
 
   &__left,
@@ -71,7 +70,6 @@ export default {
   }
 
   @media screen and (min-width: 1300px) {
-    //Make header sticky for large screens
     position: sticky;
     width: 100%;
   }
@@ -84,6 +82,7 @@ export default {
 
 .footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: calc(var(--space) / 2);
@@ -91,7 +90,7 @@ export default {
   font-size: .8em;
 
   > span {
-    margin: 0 .35em;
+    margin: .35em 0 .35em 0;
   }
 
   a {
