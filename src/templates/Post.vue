@@ -22,28 +22,21 @@
     </div>
 
     <div class="post-comments">
-      <div v-show="darkTheme">
-        <script type="application/javascript"
-                src="https://utteranc.es/client.js"
-                repo="Serpentiel/blog"
-                issue-term="pathname"
-                label="comment thread"
-                theme="photon-dark"
-                crossorigin="anonymous"
-                async>
-        </script>
-      </div>
-      <div v-show="!darkTheme">
-        <script type="application/javascript"
-                src="https://utteranc.es/client.js"
-                repo="Serpentiel/blog"
-                issue-term="pathname"
-                label="comment thread"
-                theme="github-light"
-                crossorigin="anonymous"
-                async>
-        </script>
-      </div>
+      <script
+          type="application/javascript"
+          src="https://giscus.app/client.js"
+          data-repo="Serpentiel/blog"
+          data-repo-id="MDEwOlJlcG9zaXRvcnkzMzgxODU3OTU="
+          data-category="Post Comments"
+          data-category-id="MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMzMDc2Nzcy"
+          data-mapping="pathname"
+          data-reactions-enabled="1"
+          crossorigin="anonymous"
+          async
+          :key="giscusTheme"
+          :data-theme="giscusTheme"
+      >
+      </script>
     </div>
   </Layout>
 </template>
@@ -71,6 +64,11 @@ export default {
   data() {
     return {
       darkTheme: false,
+    }
+  },
+  computed: {
+    giscusTheme: function () {
+      return this.darkTheme ? 'dark_dimmed' : 'light';
     }
   },
 }
@@ -140,10 +138,8 @@ query Post ($id: ID!) {
 
 .post-comments {
   padding: calc(var(--space) / 2);
-
-  &:empty {
-    display: none;
-  }
+  max-width: var(--content-width);
+  margin: 0 auto;
 }
 
 .post-author {
