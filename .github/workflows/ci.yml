@@ -27,11 +27,10 @@ jobs:
           username: ${{ secrets.bunnycdn_username }}
           password: ${{ secrets.bunnycdn_password }}
           local-dir: ./dist/
-          dangerous-clean-slate: true
       
       - name: 'Purge bunny.net Pull Zone''s cache'
         uses: fjogeleit/http-request-action@master
         with:
-          url: 'https://api.bunny.net/pullzone/${{ secrets.bunnycdn_pull_zone_id }}/purgeCache'
+          url: 'https://api.bunny.net/pullzone/${{ secrets.bunnycdn_pullzone_id }}/purgeCache'
           method: 'POST'
-          customHeaders: '{"AccessKey": "${{ secrets.bunnycdn_password }}"}'
+          customHeaders: '{"AccessKey": "${{ secrets.bunnycdn_accesskey }}"}'
