@@ -47,12 +47,14 @@ export default {
   color: var(--body-color);
   cursor: pointer;
 
-  &:hover {
-    opacity: .8
-  }
-
   &:focus {
     outline: none;
+  }
+}
+
+@media(hover) {
+  .toggle-theme:hover {
+    opacity: .8;
   }
 }
 </style>

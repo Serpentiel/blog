@@ -51,11 +51,6 @@ export default {
     margin-top: 0;
   }
 
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 1px 10px 30px 0 rgba(0, 0, 0, .1);
-  }
-
   &__tags {
     z-index: 1;
     position: relative;
@@ -71,6 +66,13 @@ export default {
     overflow: hidden;
     text-indent: -9999px;
     z-index: 0;
+  }
+}
+
+@media(hover) {
+  .post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 1px 10px 30px 0 rgba(0, 0, 0, .1);
   }
 }
 </style>
