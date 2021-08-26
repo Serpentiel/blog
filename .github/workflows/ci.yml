@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        
+      - name: Install packages
+        run: yarn install
+        
+      - name: Generate static site
+        run: yarn build
+        
+      - name: Deploy to bunny.net
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        with:
+          server: storage.bunnycdn.com
+          username: ${{ secrets.bunnycdn_username }}
+          password: ${{ secrets.bunnycdn_password }}
+          local-dir: ./dist/
