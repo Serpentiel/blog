@@ -3,11 +3,11 @@ date: 2021-08-26
 description: "A collection of PhpStorm plugins which help me to develop well-thought and complex web applications."
 path: "personal-phpstorm-plugins-collection"
 published: true
-tags: ['webdev', 'listicles']
+tags: ['phpstorm', 'webdev', 'listicles']
 title: "Personal PhpStorm Plugins Collection"
 ---
 
-Hey.
+Hey again.
 
 In this listicle I would like to shade some light on the plugins that help me to develop web applications on daily basis:
 
