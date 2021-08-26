@@ -25,13 +25,14 @@
 export default {
   data() {
     return {
-      darkTheme: false,
+      darkTheme: undefined,
     }
   },
   methods: {
     toggleTheme() {
       this.darkTheme = !this.darkTheme
       window.__setPreferredTheme(this.darkTheme ? 'dark' : 'light')
+      this.$emit('themeToggled')
     },
   },
   mounted() {

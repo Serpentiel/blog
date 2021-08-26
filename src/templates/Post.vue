@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout @themeToggled="updateThemeState">
     <div class="post-title">
       <h1 class="post-title__text">
         {{ $page.post.title }}
@@ -23,6 +23,7 @@
 
     <div class="post-comments">
       <script
+          v-if="darkTheme !== undefined"
           type="application/javascript"
           src="https://giscus.app/client.js"
           data-repo="Serpentiel/blog"
@@ -61,9 +62,22 @@ export default {
       ],
     }
   },
+  data() {
+    return {
+      darkTheme: undefined,
+    }
+  },
+  methods: {
+    updateThemeState() {
+      this.darkTheme = window.__theme === 'dark'
+    },
+  },
+  mounted() {
+    this.updateThemeState()
+  },
   computed: {
     giscusTheme: function () {
-      return window.__theme === 'dark' ? 'dark_dimmed' : 'light';
+      return this.darkTheme ? 'dark_dimmed' : 'light';
     }
   },
 }
