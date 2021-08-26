@@ -26,3 +26,4 @@ jobs:
           username: ${{ secrets.bunnycdn_username }}
           password: ${{ secrets.bunnycdn_password }}
           local-dir: ./dist/
+          server-dir: ${{ secrets.bunnycdn_server_dir }}/
