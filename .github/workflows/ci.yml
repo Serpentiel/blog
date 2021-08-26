@@ -7,6 +7,7 @@ on:
 
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
     
     steps:
@@ -26,7 +27,6 @@ jobs:
           username: ${{ secrets.bunnycdn_username }}
           password: ${{ secrets.bunnycdn_password }}
           local-dir: ./dist/
-          server-dir: ${{ secrets.bunnycdn_server_dir }}
           dangerous-clean-slate: true
       
       - name: 'Purge bunny.net Pull Zone''s cache'
