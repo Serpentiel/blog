@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
-  build:
-    name: Build
+  build_and_deploy:
+    name: Build & Deploy
     runs-on: ubuntu-latest
     
     steps:
@@ -17,7 +17,7 @@ jobs:
       - name: Install packages
         run: yarn install
         
-      - name: Generate static site
+      - name: Build static site
         run: yarn build
         
       - name: Deploy to bunny.net
