@@ -1,5 +1,5 @@
 <template>
-  <Layout @themeChanged="(v) => { this.darkTheme = v }">
+  <Layout>
     <div class="post-title">
       <h1 class="post-title__text">
         {{ $page.post.title }}
@@ -61,14 +61,9 @@ export default {
       ],
     }
   },
-  data() {
-    return {
-      darkTheme: false,
-    }
-  },
   computed: {
     giscusTheme: function () {
-      return this.darkTheme ? 'dark_dimmed' : 'light';
+      return window.__theme === 'dark' ? 'dark_dimmed' : 'light';
     }
   },
 }

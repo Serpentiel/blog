@@ -28,11 +28,6 @@ export default {
       darkTheme: false,
     }
   },
-  watch: {
-    darkTheme: function (v) {
-      this.$emit('themeChanged', v)
-    },
-  },
   methods: {
     toggleTheme() {
       this.darkTheme = !this.darkTheme
@@ -40,9 +35,7 @@ export default {
     },
   },
   mounted() {
-    if (window.__theme === 'dark') {
-      this.darkTheme = true
-    }
+    this.darkTheme = window.__theme === 'dark'
   },
 }
 </script>

@@ -7,7 +7,7 @@
       </div>
 
       <div class="header__right">
-        <ToggleTheme @themeChanged="(v) => { this.$emit('themeChanged', v) }"/>
+        <ToggleTheme/>
       </div>
     </header>
 

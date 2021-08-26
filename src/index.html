@@ -6,14 +6,10 @@
 <body ${bodyAttrs}>
 <script>
   (() => {
-    window.__onThemeChange = () => {
-    }
-
     function setTheme(newTheme) {
       window.__theme = newTheme
       preferredTheme = newTheme
       document.body.setAttribute('data-theme', newTheme)
-      window.__onThemeChange(newTheme)
     }
 
     let preferredTheme
