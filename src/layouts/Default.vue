@@ -16,7 +16,7 @@
     </main>
 
     <footer class="footer">
-      <span class="footer__copyright">Made with &hearts; by Serpentiel</span>
+      <span class="footer__copyright">Made with &#9825; by Serpentiel</span>
       <span class="footer__links">Powered by <a href="//gridsome.org">Gridsome</a></span>
     </footer>
   </div>
