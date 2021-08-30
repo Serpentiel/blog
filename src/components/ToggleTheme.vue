@@ -53,7 +53,7 @@ export default {
   }
 }
 
-@media(hover) {
+@media (hover) {
   .toggle-theme:hover {
     opacity: .8;
   }

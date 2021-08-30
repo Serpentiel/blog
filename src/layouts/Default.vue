@@ -54,6 +54,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../assets/style/variables';
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -69,7 +71,7 @@ export default {
     align-items: center;
   }
 
-  @media screen and (min-width: 1300px) {
+  @media screen and (min-width: $sw-xl) {
     position: sticky;
     width: 100%;
   }

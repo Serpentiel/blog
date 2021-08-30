@@ -13,17 +13,26 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../assets/style/variables';
+
 .post-tags {
-  margin: 1em 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5em;
 
   &__link {
-    margin-right: .7em;
+    display: flex;
+    margin: 0.5em .7em 0 0;
     font-size: .8em;
     text-decoration: none;
     background-color: var(--bg-color);
     color: currentColor !important;
     padding: .5em;
     border-radius: var(--radius);
+  }
+
+  @media screen and (max-width: $sw-sm) {
+    justify-content: center;
   }
 }
 </style>
