@@ -3,7 +3,7 @@ date: 2021-10-26
 description: "A modern approach for the archaic key."
 path: "making-use-of-caps-lock-key-on-mac"
 published: true
-tags: ['macos']
+tags: ['macos', 'productivity']
 title: "Making use of Caps Lock key on Mac"
 ---
 
@@ -11,13 +11,13 @@ If you think about your keyboard a little bit and the way you use it, you might 
 
 ## Introduction
 
-While Caps Lock key is intended to be used when you want to type something in *UPPERCASE*, most of the people tend to hold Shift key for that purpose. Now if you recuperate your thoughts, you might find yourself also doing it — in that case, I've got a solution for you and anyone else willing to make their Caps Lock key great again.
+While Caps Lock key is intended to be used when you want to type something in *UPPERCASE*, most of the people tend to hold Shift key for that purpose. Now if you recuperate your thoughts, you might find yourself also doing it—in that case, I've got a solution for you and anyone else willing to make their Caps Lock key great again.
 
 Fortunately, I've been not the first one to figure out that their Caps Lock key isn't used on a daily basis, thanks to Apple. If you take a look on your keyboard preferences, you might find a checkbox in there which changes the behavior of Caps Lock key.
 
 ![making-use-of-caps-lock-key-on-mac-1](./images/making-use-of-caps-lock-key-on-mac-1.png)
 
-Less fortunately is that, despite Apple's original idea of changing the way Caps Lock key works is great, it still has a drawback to it — the only out-of-box way to change key's behavior is to make it to change your input source as you can't use Caps Lock in any configurable keyboard shortcuts.
+Less fortunately is that, despite Apple's original idea of changing the way Caps Lock key works is great, it still has a drawback to it—the only out-of-box way to change key's behavior is to make it to change your input source as you can't use Caps Lock in any configurable keyboard shortcuts.
 
 Even though that would be great for a lot of people, their implementation, for some reason, works from time to time giving massive headaches whenever you want to change your input source.
 
