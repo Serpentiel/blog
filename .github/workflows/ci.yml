@@ -9,29 +9,29 @@ jobs:
   build_and_deploy:
     name: Build & Deploy
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        
+
       - name: Install packages
         run: yarn install
-        
+
       - name: Build static site
         run: yarn build
-        
+
       - name: Deploy to bunny.net
-        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        uses: Serpentiel/FTP-Deploy-Action@master
         with:
           server: storage.bunnycdn.com
           username: ${{ secrets.bunnycdn_username }}
           password: ${{ secrets.bunnycdn_password }}
           local-dir: ./dist/
           server-dir: ${{ secrets.bunnycdn_server_dir }}
-      
+
       - name: 'Purge bunny.net Pull Zone''s cache'
         uses: fjogeleit/http-request-action@master
         with:
-          url: 'https://api.bunny.net/pullzone/${{ secrets.bunnycdn_pullzone_id }}/purgeCache'
-          method: 'POST'
+          url: https://api.bunny.net/pullzone/${{ secrets.bunnycdn_pullzone_id }}/purgeCache
+          method: POST
           customHeaders: '{"AccessKey": "${{ secrets.bunnycdn_accesskey }}"}'
