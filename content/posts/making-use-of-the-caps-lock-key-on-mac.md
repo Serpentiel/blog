@@ -4,7 +4,7 @@ description: "A modern approach for the archaic key."
 path: "making-use-of-the-caps-lock-key-on-mac"
 published: true
 tags: ['macos', 'productivity']
-title: "Making use of the Caps Lock key on Mac"
+title: "Making Use of the Caps Lock Key on Mac"
 ---
 
 If you think about your keyboard a little and the way you use it, you might figure out that there are some keys on it that you barely use—one of such keys is the Caps Lock key.
