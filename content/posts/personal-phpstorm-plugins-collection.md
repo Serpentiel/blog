@@ -15,6 +15,7 @@ In this listicle I would like to shade some light on the plugins that help me to
 - [.ignore](https://plugins.jetbrains.com/plugin/7495)
 - [Atom Material Icons](https://plugins.jetbrains.com/plugin/10044)
 - [CodeGlance2](https://plugins.jetbrains.com/plugin/15562)
+- [CODEOWNERS](https://plugins.jetbrains.com/plugin/16811)
 - [Discord Integration](https://plugins.jetbrains.com/plugin/10233)
 - [GitToolBox](https://plugins.jetbrains.com/plugin/7499)
 - [Ideolog](https://plugins.jetbrains.com/plugin/9746)
@@ -38,4 +39,4 @@ In this listicle I would like to shade some light on the plugins that help me to
 
 I will keep this listicle up to date whenever I discover a new awesome plugin that can help you with development of your not less awesome web applications.
 
-Latest update: October 18, 2021.
+Latest update: November 11, 2021.
