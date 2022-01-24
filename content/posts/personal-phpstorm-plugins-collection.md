@@ -43,4 +43,4 @@ Plugins that I use in other JetBrains IDEs besides PhpStorm are listed with an a
 
 I will keep this listicle up to date whenever I discover a new awesome plugin that can help you with development of your not less awesome web applications.
 
-Latest update: December 10, 2021.
+Latest update: January 25, 2022.
