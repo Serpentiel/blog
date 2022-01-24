@@ -24,6 +24,7 @@ Plugins that I use in other JetBrains IDEs besides PhpStorm are listed with an a
 - [Indent Rainbow*](https://plugins.jetbrains.com/plugin/13308)
 - [Key Promoter X*](https://plugins.jetbrains.com/plugin/9792)
 - [Makefile Language*](https://plugins.jetbrains.com/plugin/9333)
+- [Markdown Editor*](https://plugins.jetbrains.com/plugin/17254)
 - [Laravel](https://plugins.jetbrains.com/plugin/7532)
 - [Laravel Idea](https://plugins.jetbrains.com/plugin/13441)
 - [Nyan Progress Bar*](https://plugins.jetbrains.com/plugin/8575)
