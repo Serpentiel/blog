@@ -77,7 +77,7 @@ export default {
   },
   computed: {
     giscusTheme: function () {
-      return this.darkTheme ? 'dark_dimmed' : 'light';
+      return this.darkTheme ? 'https://giscus.app/themes/custom_example.css' : 'light'
     }
   },
 }
