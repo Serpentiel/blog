@@ -1,6 +1,7 @@
 ---
 date: 2021-08-26
-description: "A collection of plugins for JetBrains IDEs which help me to develop well-thought and complex applications."
+description: "A collection of plugins for JetBrains IDEs which help me to develop well-thought and complex
+applications."
 path: "personal-plugins-collection-for-jetbrains-ides"
 published: true
 tags: ['jetbrains', 'dev', 'webdev', 'listicles', 'live']
@@ -9,11 +10,14 @@ title: "Personal Plugins Collection for JetBrains IDEs"
 
 Hey again.
 
-In this listicle I would like to shade some light on plugins for JetBrains IDEs that help me to develop applications on daily basis.
+In this listicle I would like to shade some light on plugins for JetBrains IDEs that help me to develop applications on
+daily basis.
 
-I will keep this listicle up to date with new awesome plugins that I discover and which, I believe, could help you with development of your not less awesome applications.
+I will keep this listicle up to date with new awesome plugins that I discover and which, I believe, could help you with
+development of your not less awesome applications.
 
-Plugins that are potentially unsafe for enterprise usage due to possible NDA violation are listed with an asterisk next to their name.
+Plugins that are potentially unsafe for enterprise usage due to possible NDA violation are listed with an asterisk next
+to their name.
 
 Latest update: June 15, 2022.
 
@@ -52,7 +56,9 @@ Below is the list of plugins that I use in specific JetBrains IDEs.
 
 ### PhpStorm
 
-_N.B. PhpStorm-specific list will probably be never updated again, but you are welcome to [contribute](https://github.com/Serpentiel/blog/blob/main/content/posts/personal-plugins-collection-for-jetbrains-ides.md) in case any of these plugins becomes deprecated, obsolete or reaches its end-of-life._
+> _**N.B.** PhpStorm-specific list will probably be never updated again, but you are welcome
+to [contribute](https://github.com/Serpentiel/blog/blob/main/content/posts/personal-plugins-collection-for-jetbrains-ides.md)
+in case any of these plugins becomes deprecated, obsolete or reaches its end-of-life._
 
 - [Laravel](https://plugins.jetbrains.com/plugin/7532)
 - [Laravel Idea](https://plugins.jetbrains.com/plugin/13441)
