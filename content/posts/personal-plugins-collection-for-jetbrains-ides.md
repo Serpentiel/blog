@@ -8,6 +8,8 @@ tags: ['jetbrains', 'dev', 'webdev', 'listicles', 'live']
 title: "Personal Plugins Collection for JetBrains IDEs"
 ---
 
+_Updated on July 4th, 2022._
+
 Hey again.
 
 In this listicle I would like to shade some light on plugins for JetBrains IDEs that help me to develop applications on
@@ -19,8 +21,6 @@ development of your not less awesome applications.
 Plugins that are potentially unsafe for enterprise usage due to possible NDA violation are listed with an asterisk next
 to their name.
 
-Latest update: June 15, 2022.
-
 ## General
 
 Below is the list of plugins that I use accross every JetBrains IDE that I have installed.
@@ -28,6 +28,7 @@ Below is the list of plugins that I use accross every JetBrains IDE that I have 
 - [.env files support](https://plugins.jetbrains.com/plugin/9525)
 - [.ignore](https://plugins.jetbrains.com/plugin/7495)
 - [Atom Material Icons](https://plugins.jetbrains.com/plugin/10044)
+- [Co-Author](https://plugins.jetbrains.com/plugin/10952)
 - [CodeGlance Pro](https://plugins.jetbrains.com/plugin/18824)
 - [CODEOWNERS](https://plugins.jetbrains.com/plugin/16811)
 - [Discord Integration*](https://plugins.jetbrains.com/plugin/10233)
