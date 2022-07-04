@@ -46,6 +46,7 @@ Below is the list of plugins that I use accross every JetBrains IDE that I have 
 - [Rainbow Brackets](https://plugins.jetbrains.com/plugin/10080)
 - [Randomness](https://plugins.jetbrains.com/plugin/9836)
 - [String Manipulation](https://plugins.jetbrains.com/plugin/2162)
+- [Terraform and HCL](https://plugins.jetbrains.com/plugin/7808)
 
 ## IDE-specific
 
