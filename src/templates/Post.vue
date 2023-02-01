@@ -104,6 +104,8 @@ query Post ($id: ID!) {
 
 <style lang="scss">
 .post-title {
+  max-width: var(--content-width);
+  margin: 0 auto;
   padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
   text-align: center;
 }
