@@ -8,6 +8,8 @@ tags: ['terraform', 'dev']
 title: "The Importance of Preventing External Changes to Managed Resources in a Terraform Provider"
 ---
 
+Hey again!
+
 ## Introduction
 
 In order to understand why it is important for a Terraform provider not to allow external changes to the managed
