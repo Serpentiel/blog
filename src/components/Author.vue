@@ -10,7 +10,7 @@
 
     <p class="author__links">
       <a href="//github.com/Serpentiel">GitHub</a>
-      <a href="//twitter.com/zaruczewski">Twitter</a>
+      <a href="//x.com/srpntl">X</a>
     </p>
   </div>
 </template>
